@@ -587,7 +587,7 @@ void ws2811_fini(ws2811_t *ws2811)
 int ws2811_wait(ws2811_t *ws2811)
 {
     int waitCount = 0;
-    int maxWaitCount = 10;
+    int maxWaitCount = 5000;
    
     volatile dma_t *dma = ws2811->device->dma;
 
